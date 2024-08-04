@@ -2,8 +2,6 @@ from fastapi import FastAPI, HTTPException
 from fastapi.openapi.utils import get_openapi
 from fastapi.responses import FileResponse
 from datetime import datetime
-from dotenv import load_dotenv
-import os
 import psutil
 from typing import Union
 from utility.utils import fetch_server_location, fetch_subtitles, fetch_query
