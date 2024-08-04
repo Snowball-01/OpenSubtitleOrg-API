@@ -18,7 +18,7 @@ Welcome to the OpenSubtitles Org API, a simple and powerful API to fetch subtitl
 
 1.  Clone the repository:
     
-        git clone https://github.com/Snowball-01/Asian-Drama-API.git
+        git clone https://github.com/Snowball-01/OpenSubtitles-API.git
     
 2.  Install the required dependencies:
     
@@ -41,7 +41,7 @@ Returns basic information about the API, server, and memory usage.
     {
         "success": true,
         "playground": "http://82.180.131.185:8000",
-        "endpoint": "https://github.com/Snowball-01/Asian-Drama-API",
+        "endpoint": "https://github.com/Snowball-01/OpenSubtitles-API",
         "developer": "https://t.me/Snowball_Official",
         "date": "MM/DD/YYYY, HH:MM:SS AM/PM",
         "rss": "XX.XX MB",
