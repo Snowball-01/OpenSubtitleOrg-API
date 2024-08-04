@@ -22,7 +22,7 @@ Welcome to the OpenSubtitles Org API, a simple and powerful API to fetch subtitl
     
 2.  Install the required dependencies:
     
-        pip install fastapi requests psutil beautifulsoup4 python-dotenv lxml
+        pip install fastapi requests psutil beautifulsoup4 lxml
     
 3.  Run the FastAPI server:
     
