@@ -81,7 +81,6 @@ async def fetch_query(query: str) -> List[dict]:
                     "image": f"https://{el.find('img')['src'][2:]}",
                     "imdb": f'{el.find("td", attrs={"align": "center"}).text}/10',
                     "url": f'https://www.opensubtitles.org{el.find("a")["href"]}',
-                    "download": f"https://www.opensubtitles.org/en/subtitleserve/sub/{el.find('a')['href'].split('/')[3]}",
                 }
                 data.append(query_result)
 
