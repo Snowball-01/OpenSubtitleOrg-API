@@ -12,7 +12,7 @@ load_dotenv()
 
 app = FastAPI()
 
-opensubtitle = os.getenv("OPENSUBTITLE")
+OPENSUBTITLE_URL = "https://www.opensubtitles.org/en/search/sublanguageid-all"
 
 favicon_path = 'favicon.ico'
 
@@ -51,7 +51,7 @@ async def get_query_results(query: Union[str, None] = None):
 @app.get("/get")
 async def get_subtitles_by_id(id: Union[str, None] = None):
     if id:
-        return await fetch_subtitles(opensubtitle + "/" + id)
+        return await fetch_subtitles(OPENSUBTITLE_URL + "/" + id)
     else:
         raise HTTPException(status_code=400, detail="Neither query nor id provided")
 
