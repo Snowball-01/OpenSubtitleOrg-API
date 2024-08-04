@@ -36,7 +36,7 @@ async def get_api_info():
     }
 
 
-@app.get("/query")
+@app.get("/search")
 async def get_query_results(query: Union[str, None] = None):
     if query:
         return await fetch_query(query)
