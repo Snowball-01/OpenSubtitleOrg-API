@@ -29,7 +29,7 @@ async def get_api_info():
 
     return {
         "success": True,
-        "playground": "http://82.180.131.185:8000",
+        "playground": "http://82.180.131.185:5000",
         "endpoint": "https://github.com/Snowball-01/OpenSubtitles-API",
         "developer": "https://t.me/Snowball_Official",
         "date": datetime.now().strftime("%m/%d/%Y, %I:%M:%S %p"),
@@ -79,4 +79,4 @@ app.openapi = custom_openapi
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=5000)
