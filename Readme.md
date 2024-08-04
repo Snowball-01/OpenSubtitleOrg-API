@@ -77,7 +77,6 @@ If `query` is provided:
             "imdb": "IMDB Rating/10",
             "rating": "Aggregate Rating",
             "url": "https://www.opensubtitles.org/subtitle_url",
-            "download": "https://www.opensubtitles.org/en/subtitleserve/sub/subtitle_id"
         },
         ...
     ]
