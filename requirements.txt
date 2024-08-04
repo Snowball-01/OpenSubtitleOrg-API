@@ -1,0 +1,7 @@
+psutil
+fastapi[standard]
+requests
+beautifulsoup4
+lxml
+aiohttp
+python-dotenv
