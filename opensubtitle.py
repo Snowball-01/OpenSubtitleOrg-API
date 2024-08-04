@@ -6,8 +6,6 @@ import psutil
 from typing import Union
 from utility.utils import fetch_server_location, fetch_subtitles, fetch_query
 
-load_dotenv()
-
 app = FastAPI()
 
 OPENSUBTITLE_URL = "https://www.opensubtitles.org/en/search/sublanguageid-all"
