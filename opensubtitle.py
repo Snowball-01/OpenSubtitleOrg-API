@@ -1,5 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.openapi.utils import get_openapi
+from fastapi.responses import FileResponse
 from datetime import datetime
 from dotenv import load_dotenv
 import os
@@ -13,6 +14,11 @@ app = FastAPI()
 
 opensubtitle = os.getenv("OPENSUBTITLE")
 
+favicon_path = 'favicon.ico'
+
+@app.get('/favicon.ico', include_in_schema=False)
+async def favicon():
+    return FileResponse(favicon_path)
 
 @app.get("/")
 async def get_api_info():
