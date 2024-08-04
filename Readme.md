@@ -59,7 +59,9 @@ Fetch subtitles or query information based on parameters.
 **Parameters:**
 
 *   `query` (optional): A search query to find subtitles.
+*   Eg - `/search?query=doraemon`
 *   `id` (optional): An ID to fetch specific subtitles.
+*   Eg - `/get?id=idmovie-994419`
 
 **Response:**
 
